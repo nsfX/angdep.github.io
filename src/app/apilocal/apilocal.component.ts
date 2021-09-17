@@ -11,6 +11,7 @@ export class ApilocalComponent implements OnInit {
   constructor(private api: ApiserviceService) { }
 
   ngOnInit(): void {
+    console.log("entrada")
     this.api.getResponse().subscribe(result => {
       console.log(result);
     });
